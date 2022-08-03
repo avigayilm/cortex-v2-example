@@ -17,9 +17,9 @@ class TrainAdvance():
 # ---------------------------------------------------
 
 user = {
-	"license" : "your emotivpro license, which could use for third party app",
-	"client_id" : "your client id",
-	"client_secret" : "your client secret",
+	"license" : "",
+	"client_id" : 'NxyEzxFWW84LtcvZ1sFsD7XOVtTskofcWP0jRpVq',
+	"client_secret" : 'N7Njh53gWrdlbfwqbSdNKvxfTh2jjKvkPrQ57TtXcGKeMW7f6UQ9nBbNrXNj02UaB2pdgEtbYTrjcKzTQ53rtC5nLdVUwmWcPlmHtpVXUwL1o5FsJks3tv4LPh77PTs4',
 	"debit" : 100
 }
 
