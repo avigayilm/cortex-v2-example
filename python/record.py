@@ -18,7 +18,7 @@ class Record():
 		self.c.create_record(record_name,
 							record_description)
 
-		self.wait(record_length_s)
+		self.wait(record_length_s)# wehave to change here in order to record according to longpress
 
 		self.c.stop_record()
 
@@ -54,23 +54,22 @@ class Record():
 # -----------------------------------------------------------
 
 user = {
-	"license" : "your emotivpro license, which could use for third party app",
-	"client_id" : "your client id",
-	"client_secret" : "your client secret",
+	"license" : "",
+	"client_id" : "NxyEzxFWW84LtcvZ1sFsD7XOVtTskofcWP0jRpVq",
+	"client_secret" : "N7Njh53gWrdlbfwqbSdNKvxfTh2jjKvkPrQ57TtXcGKeMW7f6UQ9nBbNrXNj02UaB2pdgEtbYTrjcKzTQ53rtC5nLdVUwmWcPlmHtpVXUwL1o5FsJks3tv4LPh77PTs4",
 	"debit" : 100
 }
 
 r = Record()
 
 # record parameters
-record_name = 'your record name'
-record_description = 'your description for record'
-record_length_s = 30
-
+record_name = '80SecondsRec'
+record_description = 'simulaiton for 20 questions'
+record_length_s = 2 # change this according to how many questions are being asked.
 
 # export parameters
-record_export_folder = 'your place to export, you should have write permission, example on desktop'
-record_export_data_types = ['EEG', 'MOTION', 'PM', 'BP']
+record_export_folder ='C:\\Users\\aviga\\Documents\\Ofek\\Project'
+record_export_data_types = ['EEG'] # maybe we only need the EEG DATA.[, 'MOTION', 'PM', 'BP']
 record_export_format = 'CSV'
 record_export_version = 'V2'
 
